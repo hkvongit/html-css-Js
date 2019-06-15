@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#topbar{
+    width: 1050px;
+    margin: 0 auto;
+    height: 45px;
+}
+#logo{
+    margin-right: 8px;
+    margin-top: 8px;
+    width: 100px;
+    float: left;
+}
+.divider{
+    float: left;
+    border-left: 1px #CCCCCC solid;
+    height: 100%;
+}
+#sigin{
+    width: 30px;
+    margin: 10px 15px;
+    float: left;
+}
+.signintext{
+    font-weight: bold;
+    font-size: 100%;
+    position: relative;
+    top: 15px;
+    float: left;
+}
+.topbartext{
+    font-weight: bold;
+    font-size: 100%;
+    position: relative;
+    top: 15px;
+    left: 10px;
+    float: left;
+}
+#news{
+    margin-left: 60px;
+    margin-right: 20px;
+}
+.afternews{
+    margin-right: 20px;
+}
+#darrow{
+    margin-top: 12px;
+    margin-left: 55px;
+    float: left;
+}
+#searchbox{
+    margin-top: 12px;
+    margin-left: 8px;
+    height: 60%;
+    width: 200px;
+    background-color: #E4E4E4;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+#search{
+    float: left;
+}
+#searchbox{
+    float: left;
+}
+#searchicon{
+    margin-top: 11.2px;
+    height: 66%;
+    float: left;
+}
+#searchicon:hover{
+    cursor: pointer;
+}
+#secondbar{
+    margin: 0;
+    background-color: #BB1919;
+    height: 55px;
+}
+#secondinnerbar{
+    width: 1050px;
+    margin: 0 auto;
+    height: 45px;
+}
+#secondnews{
+    color: white;
+    font-size: 230%;
+    position: relative;
+    top: 8px;
+    float: left;
+}
+#thirdbar{
+    margin: 0;
+    background-color: #A91717;
+    height: 45px;
+}
+#thirdinnerbar{
+    width: 1050px;
+    margin: 0 auto;
+    height: 45px;
+}
+.thirdbartext{
+    color: white;
+    position: relative;
+    top: 13px;
+    float: left;
+}
+.thirdbardivider{
+    border-left: 1px black;
+}

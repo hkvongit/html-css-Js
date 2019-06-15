@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+<body>
+    <script type = "text/javaScript">
+        function buttonClicked(){
+            document.getElementById("did2").innerHTML="hey you have clicked the button"
+            alert(document.getElementById("did").innerHTML)
+        }
+    </script>    
+    <br/>
+    <br/>
+    <div id="did">
+        <h2>Hai</h2>
+        <button onclick="buttonClicked()">Click here</button>
+        <h1 id="did2"></h1>
+    </div>
+</body>
+</html>

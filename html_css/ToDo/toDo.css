@@ -1,0 +1,21 @@
+#c1{
+    color:red
+}
+.comp{
+    text-decoration: line-through
+}
+/* *{
+    border: 1px solid lightgrey; */
+}
+li a{
+    color:yellow;
+    background:black
+}
+
+a[href="https://reactjs.org/tutorial/tutorial.html"]{
+    color:white;
+}
+
+input[type="checkbox"]{
+    border:2px solid red;
+}

@@ -1,0 +1,16 @@
+h1{
+    color:rgb(245, 112, 245);
+    border-color:white;
+    border-width:2px;
+    border-style:dotted;    
+}
+h4{
+    color:rgb(120, 236, 120)
+}
+li{
+    color:rgb(248, 149, 174)
+}
+body{
+    background:url(https://images.pexels.com/photos/1020315/pexels-photo-1020315.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)
+   
+}

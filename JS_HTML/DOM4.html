@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TITLE</title>
+</head>
+<body>
+    <script type = "text/javaScript">
+       function f1(){
+           var c=document.getElementById("DDB")
+           alert(c.options[c.selectedIndex].value)
+       }
+    </script>    
+    <br/>
+    <br/>
+    <div>
+        <select id="DDB">
+            <option value="A"> a </option>
+            <option value="B"> b </option>
+            <option value="C"> c </option>
+        </select>
+        <button onclick="f1()">click me</button>
+
+    </div>
+</body>
+</html>

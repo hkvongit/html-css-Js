@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TITLE</title>
+</head>
+<body>
+    <script type = "text/javaScript">
+       function f1(){
+           var rd1=document.getElementById("rd1")
+           var rd2=document.getElementById("rd2")
+           if (rd1.checked==true){
+               alert("you have selected "+rd1.value)
+           }
+           else if (rd2.checked==true) {
+            alert("you have selected "+rd2.value)
+           } else {
+            alert("you have not selected anything")
+           }
+       }
+    </script>    
+    <br/>
+    <br/>
+    <div>
+       <input type="radio" id="rd1" name="gp1" value="hKv">HKV</input><br/>
+       <input type="radio" id="rd2" name="gp1" value="sRi">SRI</input><br/>
+       <button id="btnl" onclick="f1()">Click Me</button>
+
+    </div>
+</body>
+</html>

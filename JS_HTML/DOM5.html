@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TITLE</title>
+</head>
+<body>
+    <script type = "text/javaScript">
+       function f1(){
+           var p =document.getElementsByTagName('p')
+           p[0].style.fontSize=25
+           p[1].style.color="red"
+           p[2].style.fontStyle="italic"
+           p[1].style.fontWeight="bold"
+       }
+    </script>    
+    <br/>
+    <br/>
+    <div>
+      <p>this is p1</p>  
+      <p>this is p2</p>  
+      <p>this is p3</p>  
+      <p>this is p4</p>
+      <button onclick="f1()">Click me</button>  
+    </div>
+</body>
+</html>
