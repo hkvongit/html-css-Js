@@ -1,0 +1,21 @@
+table{
+    margin:auto
+}
+td{
+    width: 100px;
+    height:100px;
+    /* background-color: yellow */
+    text-align: center
+}
+.vertical{
+    border-left:1px black solid;
+    border-right:1px black solid
+}
+.hori{
+    border-top:1px black solid;
+    border-bottom:1px black solid
+}
+
+h1{
+    text-align: center
+}
