@@ -1,0 +1,144 @@
+* {
+	margin: 0px;
+	padding: 0px;
+    box-sizing: border-box;
+  
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+header{
+    display: flex;
+    width:90%;
+    height:10vh;
+    margin:auto;
+    align-items: center;
+    /* background-color: lightblue; */
+}
+
+.logo-container,.nav-links,.cart{
+    display:flex;
+}
+
+
+.logo-container{
+    /* background-color: lightgreen; */
+    flex: 1;
+}
+.logo-container img{
+    cursor: pointer;
+}
+.logo{
+    font-weight: 400;
+    margin:5px;
+    cursor: pointer;
+}
+nav{
+    /* background: rgb(4, 138, 138); */
+    flex: 2;
+}
+
+.nav-links{
+    justify-content:space-around;
+    list-style: none;
+
+}
+.nav-link {
+	color: rgb(59, 58, 58);
+	font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cart{
+    /* background-color: blueviolet; */
+    flex: 1; 
+    justify-content: flex-end;
+}
+.cart img{
+    cursor: pointer;
+}
+
+.presentation{
+    display:flex;
+    width:90%;
+    margin:auto;
+    min-height:80vh;
+    align-items: center;
+    /* border:2px solid red; */
+}
+
+
+.cover{
+    flex:1;
+    /* background:lightseagreen */
+}
+.cover img{
+    height:60vh;
+}
+
+.introduction{
+    /* background: lightpink; */
+    flex:1;
+}
+.intro-text h1{
+    font-size:44px;
+    font-weight: 500;
+}
+.intro-text p{
+    font-size: 16px
+}
+.cta{
+    padding:50px 0 0 10px
+}
+.cta-select{
+    border:2px solid  #005c97;
+    background:transparent;
+    width:150px;
+    height:50px;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    cursor: pointer;
+}
+.cta-add{
+    border:1px solid transparent;
+    background: linear-gradient(to right, #005c97, #363795);
+    width:150px;
+    height:50px;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    color:white;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+
+
+.big-circle{
+    position:absolute;
+    top: 0px;
+    right:0px;
+    z-index: -1;
+    opacity:0.4;
+    height:80vh;
+}
+.medium-circle{
+    position:absolute;
+    top: 30%;
+    right:30%;
+    z-index: -1;
+    opacity:0.5;
+    height:50vh;
+}
+.small-circle{
+    position:absolute;
+    bottom: 0%;
+    right:50%;
+    z-index: -1;
+    opacity:0.9;
+    height:25vh;
+}
