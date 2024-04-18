@@ -1,0 +1,17 @@
+.heading-container {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-container > a {
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
+
+.heading-container > a:hover {
+  color: rgba(0, 0, 0, 0.9);
+  text-decoration: underline;
+}

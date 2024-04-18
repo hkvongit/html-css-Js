@@ -1,0 +1,52 @@
+.item {
+  border-radius: 1em;
+  min-width: 10rem;
+  background-color: aquamarine;
+  min-height: 10rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.item:nth-child(1) {
+  grid-area: one;
+}
+.item:nth-child(2) {
+  grid-area: two;
+}
+.item:nth-child(3) {
+  grid-area: three;
+  background-color: brown;
+}
+.item:nth-child(4) {
+  grid-area: four;
+}
+.item:nth-child(5) {
+  grid-area: five;
+}
+
+.container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-areas:
+    "one"
+    "two"
+    "three"
+    "four"
+    "five";
+  grid-auto-columns: 1fr;
+}
+@media (width > 30em) {
+  .container {
+    grid-template-areas:
+      "one one"
+      "two three"
+      "four three"
+      "five five";
+  }
+}
+@media (width > 40em) {
+  .container {
+    grid-template-areas:
+      "one one two three"
+      "four five five three";
+  }
+}
