@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="title">
+    Learning GRID AUTO FLOW
+    <br />
+    Source: <a href="https://courses.wesbos.com/account/access/66220b9ae600da88f2d2fc3c/view/249541416">Wes bros
+      course</a>
+  </div>
+
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+
+<style>
+  .title {
+    padding: 2em;
+  }
+
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 100px 200px;
+    grid-auto-flow: column;
+    grid-auto-columns: 50px;
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 20%;
+
+  }
+</style>
+
+</html>
