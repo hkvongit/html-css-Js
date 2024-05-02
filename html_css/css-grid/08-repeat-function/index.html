@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="title">
+    Learning <strong style="color:blueviolet">REPEAT FUNCTION</strong>
+    <br />
+    Source: <a href="https://courses.wesbos.com/account/access/66220b9ae600da88f2d2fc3c/view/249541847">Wes bros
+      course</a>
+  </div>
+
+  <div>
+    <h2>grid-template-columns: repeat(4, 1fr 2fr);</h2>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+    </div>
+  </div>
+
+  <div>
+    <h2>grid-template-columns: repeat(4, 1fr 2fr);</h2>
+    <div class="container-2">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+    </div>
+  </div>
+</body>
+
+<style>
+  .title {
+    padding: 2em;
+  }
+
+  .container {
+    display: grid;
+    border: 2px solid greenyellow;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr 2fr);
+    /* This will produce alternative 1fr 2fr grid children 4 times*/
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 20%;
+  }
+
+  .container-2 {
+    display: grid;
+    border: 2px solid greenyellow;
+    grid-gap: 20px;
+    grid-template-columns: 100px repeat(2, 1fr 2fr) auto;
+    /* This will produce mix of normal + repeats*/
+  }
+</style>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="title">
+    Learning <strong style="color:blue;text-transform: uppercase;">Placing Grid Items</strong>
+    <br />
+    Source: <a href="https://courses.wesbos.com/account/access/66220b9ae600da88f2d2fc3c/view/249543600">Wes bros
+      course</a>
+  </div>
+
+  <div>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+      <div class="item">11</div>
+      <div class="item">12</div>
+      <div class="item">13</div>
+      <div class="item">14</div>
+      <div class="item">15</div>
+      <div class="item">16</div>
+      <div class="item">17</div>
+      <div class="item">18</div>
+      <div class="item">19</div>
+      <div class="item">20</div>
+      <div class="item">21</div>
+      <div class="item">22</div>
+      <div class="item">23</div>
+      <div class="item">24</div>
+      <div class="item">25</div>
+      <div class="item">26</div>
+      <div class="item">27</div>
+      <div class="item">28</div>
+      <div class="item">29</div>
+      <div class="item">30</div>
+    </div>
+  </div>
+
+
+</body>
+
+<style>
+  .title {
+    padding: 2em;
+  }
+
+  .container {
+    display: grid;
+    border: 2px solid greenyellow;
+    grid-gap: 20px;
+    grid-template-columns: repeat(5, 1fr);
+
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 20px;
+  }
+
+  .item:nth-child(2) {
+    background-color: blueviolet;
+    /* grid-column-start: 3;
+    grid-column-end: 6; */
+    grid-column: 3 /6;
+    /* Shorthand of -
+    grid-column-start: 3;
+    grid-column-end: 6;
+    */
+    grid-row: 1 / 4;
+  }
+
+  .item:nth-child(21) {
+    background-color: chartreuse;
+    grid-column: 2 / -1;
+    /* -1 is for last line*/
+  }
+
+  .item:nth-child(9) {
+    background-color: darkorange;
+    grid-column: 2 / -2;
+    /* -2 is for second last line */
+  }
+</style>
+
+</html>
