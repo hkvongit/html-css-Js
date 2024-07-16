@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border Image in CSS</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="content-box">Some scroll snap</div>
+    <div class="content-box">1 Some scroll snap</div>
+    <div class="content-box">2 Some scroll snap</div>
+    <div class="content-box">2 Some scroll snap</div>
+  </div>
+
+
+</body>
+<style>
+  .container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 60vw;
+    gap: 1rem;
+    overflow: scroll;
+
+    scroll-snap-type: x mandatory;
+
+    >* {
+      scroll-margin: 1rem;
+      scroll-snap-align: start;
+    }
+
+    >.content-box {
+      padding: 4rem;
+      background-color: bisque;
+    }
+  }
+</style>
+
+</html>

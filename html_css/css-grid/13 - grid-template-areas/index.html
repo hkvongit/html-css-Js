@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="title">
+    Learning <strong style="color:red;text-transform: uppercase;">minmax() in Grid</strong>
+    <p>Great for setting layouts</p>
+    <br />
+    Source: <a href="https://courses.wesbos.com/account/access/66220b9ae600da88f2d2fc3c/view/249546128">Wes bros
+      course</a>
+  </div>
+
+  <div>
+    <div class="container">
+      <div class="item">
+        <p>I am the sidebar. #1</p>
+      </div>
+      <div class="item">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Inventore, sed.
+          Lorem ipsum d #2</p>
+      </div>
+      <div class="item">
+        <p>I am the sidebar. #3</p>
+      </div>
+      <div class="item">
+        <p>I am the footer. #4</p>
+      </div>
+
+    </div>
+  </div>
+
+
+</body>
+
+<style>
+  body {
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.6)
+  }
+
+  .title {
+    padding: 2em;
+  }
+
+  .container {
+    display: grid;
+    border: 2px solid greenyellow;
+    grid-gap: 40px;
+    grid-template-columns: 1fr 60% 1fr;
+    grid-template-rows: 10rem 10rem 4rem;
+    grid-template-areas:
+      "sidebar1 content sidebar2"
+      "sidebar1 content sidebar2"
+      "footer footer footer"
+    ;
+  }
+
+  @media(width < 600px) {
+
+    /* 
+    good way ⬇️
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 10rem 10rem 10rem 4rem;
+      grid-template-areas:
+        "sidebar1"
+        "content "
+        "sidebar2 "
+        "footer "
+      ;
+    } */
+    /* With minimal change ⬇️ */
+    .container {
+      grid-template-rows: 10rem 10rem 10rem 4rem;
+      grid-template-areas:
+        "sidebar1 sidebar1 sidebar1"
+        "content content content"
+        "sidebar2 sidebar2 sidebar2"
+        "footer footer footer"
+      ;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  .item:nth-child(1) {
+    grid-area: sidebar1;
+    background-color: beige;
+  }
+
+  .item:nth-child(2) {
+    grid-area: content;
+    background-color: cadetblue;
+  }
+
+  .item:nth-child(3) {
+    grid-area: sidebar2;
+    background-color: chocolate;
+  }
+
+  .item:nth-child(4) {
+    grid-area: footer;
+    background-color: cornflowerblue;
+  }
+</style>
+
+</html>

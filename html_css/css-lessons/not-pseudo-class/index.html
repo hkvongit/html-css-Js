@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>not pseudo class</title>
+</head>
+
+<body>
+  <ul>
+    <li class="list-item">Hey 1</li>
+    <li class="list-item">Hey 2</li>
+    <li class="list-item">Hey 3</li>
+    <li class="list-item">Hey 4</li>
+  </ul>
+</body>
+
+<style>
+  /* last-child, nth-child(x), first-child will work in not */
+  .list-item:not(:last-child) {
+    color: brown
+  }
+</style>
+
+</html>
