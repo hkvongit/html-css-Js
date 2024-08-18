@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Form validation with css</title>
+</head>
+
+<body>
+
+  <div class="title">
+    FORM VALIDATION WITH CSS
+    <br />
+    Source: <a href="https://www.youtube.com/watch?v=awNYtIAu6pI"> Kevin Powell youtube | Very small CSS tweaks
+      for better forms</a>
+  </div>
+
+  <div>
+    <form class="signup-form">
+      <label for="name">Name</label>
+      <input required name="name" type="string" placeholder="Enter your name" autocomplete="off" />
+      <label for="email">Email</label>
+      <input required name="email" type="email" placeholder="Your email address" autocomplete="off" />
+      <label for="password">Create a Password</label>
+      <input required name="password" type="password" placeholder="Create a password" minlength="6" />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+<style>
+
+</style>
+
+</html>

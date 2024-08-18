@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  padding: 2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: small;
+  /* padding-left: 20%; */
+  /* padding-right: 20%; */
+}
+
+.signup-form {
+  display: grid;
+  width: 20rem;
+  grid-gap: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+button[type="submit"] {
+  padding: 0.5rem;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+}
+
+/* Styling for the requirement is below, above is just setting up */
+
+input {
+  outline: 3px solid blue;
+}
+
+/* 
+Below code will make all the field to invalid by default due to initial empty data, so we cannot use it
+
+input:invalid {
+  outline-color: red;
+}
+
+input:valid {
+  outline-color: green;
+} 
+  
+*/
+
+/* 
+
+Below code will work but browser support is not that great
+
+input:user-invalid {
+  outline-color: red;
+}
+
+input:user-valid {
+  outline-color: green;
+}
+*/
+
+/* Below code works for all browsers */
+input:not(:placeholder-shown):invalid {
+  outline-color: red;
+}
+
+input:not(:placeholder-shown):valid {
+  outline-color: green;
+}
+
+/* this code will avoid validating currently typing input. */
+input:focus:invalid {
+  outline-color: yellow;
+}
+
+/*  END */
