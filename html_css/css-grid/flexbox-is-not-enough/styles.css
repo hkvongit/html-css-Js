@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  padding: 2rem;
+  background-color: antiquewhite;
+}
+
+/* Learning starts here */
+
+/* 1. Text boxes with auto wrap  */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.box {
+  /* min-width: 200px; */
+}
+
+/* 2. Overlapping texts */
+.container-2 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  align-items: center;
+}
+
+.container-2 > .text-div-2 {
+  grid-row: 1;
+  grid-column: 1 / 3;
+  z-index: 2;
+  font-size: 2rem;
+  color: blueviolet;
+  mix-blend-mode: difference;
+}
+
+.container-2 > .img-2 {
+  display: flex;
+  grid-row: 1;
+  grid-column: 2 / 4;
+  width: 100%;
+}
